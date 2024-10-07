@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <header id="header">
+      <img src="assets/logo.svg" alt="Logo do TodoList" />
+      <form id="taskForm">
+        <input type="text" placeholder="Adicione uma nova tarefa" required />
+        <button type="submit" id="button-default">
+          Criar <img src="assets/add-icon.svg" alt="Ícone de adicionar" />
+        </button>
+        <button type="submit" id="button-mobile">
+          <img src="assets/add-icon.svg" alt="Ícone de adicionar" />
+        </button>
+      </form>
+    </header>
+    <section class="container" id="tarefas">
+      <header id="header-tarefas">
+        <div id="tarefas-criadas">
+          <span class="text-subtitle">Tarefas criadas</span>
+          <div id="circle-tarefas">
+            <span id="quantidade-tarefas">0</span>
+          </div>
+        </div>
+        <div id="tarefas-criadas">
+          <span class="text-subtitle">Concluídas</span>
+          <div id="circle-concluida">
+            <span id="quantidade-concluida">0</span>
+          </div>
+        </div>
+      </header>
+      <ul id="tarefas-container">
+        <li class="sem-tarefas-items" id="sem-tarefas">
+          <img src="assets/task-icon.svg" alt="Icone de tarefas" />
+          <div>
+            <span class="text-subtitle">Você ainda não tem tarefas cadastradas</span>
+            <span class="text-md">Crie tarefas e organize seus itens a fazer</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <script src="scripts.js"></script>
+  </body>
+</html>

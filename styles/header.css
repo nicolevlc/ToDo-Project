@@ -1,0 +1,84 @@
+
+#header {
+    background-color: var(--background-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12.5rem;
+    position: relative;
+  }
+  
+  #taskForm {
+    position: absolute;
+    bottom: calc(-3.375rem / 2);
+    height: 3.375rem;
+    width: 100%;
+    max-width: 46rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  #taskForm input {
+    height: 100%;
+    flex: 1;
+    color: var(--text-color);
+    padding: 0px 1.125rem;
+    border-radius: 8px;
+    border: 1px solid var(--background-secondary);
+  }
+  
+  #taskForm input::placeholder {
+    color: var(--text-color);
+  }
+  
+  #taskForm input:focus {
+    color: #262428;
+    outline-color: var(--purple-primary);
+  }
+  
+  #button-default {
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--purple-primary);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 800;
+  }
+  
+  #button-default:hover {
+    cursor: pointer;
+    background-color: #9359f3;
+  }
+  
+  #button-mobile {
+    display: none;
+  }
+  
+  @media (max-width: 750px) {
+    #taskForm {
+      padding: 0px 24px;
+    }
+  
+    #button-default {
+      display: none;
+    }
+  
+    #button-mobile {
+      padding: 1rem 1.5rem;
+      display: block;
+      background-color: var(--purple-primary);
+      border: none;
+      border-radius: 8px;
+    }
+  
+    #button-mobile:hover {
+      cursor: pointer;
+      background-color: #9359f3;
+    }
+  }
+  
